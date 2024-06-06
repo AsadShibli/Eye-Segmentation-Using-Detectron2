@@ -13,6 +13,10 @@ It's worth noting that a limited number of images were employed in this training
 - **Validation Set:** 9 images
 - **Test Set:** 3 images
 
+The dataset comprises images annotated with three classes:
+1. Retina
+2. Cornea
+3. Optic Disk
 ## Data Augmentation
 - On-the-fly data augmentation was performed during training to enhance the robustness of the model.
 
