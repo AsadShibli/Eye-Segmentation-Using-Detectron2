@@ -1,10 +1,30 @@
-# Eye Segmentation Using Detectron2
+# Custom Instance Segmentation with Detectron2
 
 This repository contains a project for training a custom instance segmentation model using Detectron2 on your own dataset. The images were collected and annotated using [makesense.ai](https://www.makesense.ai/).
 
+It's worth noting that a limited number of images were employed in this training process. Incorporating a larger dataset could potentially enhance the model's performance. Therefore, expanding the dataset with additional images may lead to improved segmentation accuracy and robustness.
 ## demo
 
 ![git](https://github.com/AsadShibli/Eye-Segmentation-Using-Detectron2/assets/119102237/577f6eee-bee5-4114-b18a-f713a9f3aff2)
+
+
+## Dataset Overview
+- **Training Set:** 14 images
+- **Validation Set:** 9 images
+- **Test Set:** 3 images
+
+## Data Augmentation
+- On-the-fly data augmentation was performed during training to enhance the robustness of the model.
+
+## Project Structure
+- `data/`
+  - `train/`: Directory containing training images and corresponding annotation files in JSON format.
+  - `val/`: Directory containing validation images and corresponding annotation files in JSON format.
+  - `test/`: Directory containing test images.
+## Getting Started
+### 1. Data Preparation
+- Collect and annotate images using [makesense.ai](https://www.makesense.ai/).
+- Split the dataset into training, validation, and test sets, ensuring that annotation files in JSON format are placed in their respective directories.
 
 
 ## Installation
